@@ -45,12 +45,11 @@ int postEval(char *ch)
             case '/':
                 push(p, val2 / val1);
                 break;
-            // case '^':
-            //     // double c=(double)val1;
-            //     // double b=(double)val2;
-            //     double a = (pow(val2, val1));
-            //     push(p, a);
-            //     break;
+            case '^':
+                
+                double a = (pow(val2, val1));
+                push(p, a);
+                break;
             }
         }
     }
